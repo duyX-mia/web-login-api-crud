@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #c2ded1;
+      }
+
+      h1 {
+        color: #354259;
+        text-align: center;
+      }
+
+      p {
+        font-family: Times;
+        font-size: 20px;
+      }
+      form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em;
+      }
+    </style>
+  </head>
+  <h1>SignUp</h1>
+  <form autocomplete="on">
+    <!-- <form method="post" action="/users"> -->
+    <p>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" />
+    </p>
+    <p>
+      <label for="password">Password:</label>
+      <input type="text" name="password" id="password" />
+    </p>
+    <p>
+      <input type="submit" value="SignUp" id="signUpBtn" />
+    </p>
+  </form>
+  <h1>Login</h1>
+  <form autocomplete="on">
+    <!-- <form method="post" action="/users"> -->
+    <p>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="usernameSignin" />
+    </p>
+    <p>
+      <label for="password">Password:</label>
+      <input type="text" name="password" id="passwordSignin" />
+    </p>
+    <p>
+      <input type="submit" value="Login" id="signInBtn" />
+    </p>
+  </form>
+  <script src="login.js"></script>
+</html>

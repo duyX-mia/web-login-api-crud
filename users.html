@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    table, th, td {
+  border:1px solid black;
+}
+body {
+              background-color: #C2DED1;
+            }
+            
+            h1 {
+              color: #354259;
+              text-align: center;
+            }
+            
+            p {
+              font-family: verdana;
+              font-size: 20px;
+              text-align: center;
+            }
+</style>
+<body>
+    <h1><%= title %></h1>
+<%- message %>
+<%- table %>
+<div class="container">
+  <p>Exit your system:
+    <a href="/login" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-log-out"></span> Log out
+    </a>
+  </p> 
+</div>
+</body>
+</html>
