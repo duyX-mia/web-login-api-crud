@@ -3,7 +3,8 @@
   <head>
     <style>
       body {
-        background-color: #c2ded1;
+        background-color: #f0f8ea;
+        font-family: "Arial", sans-serif;
       }
 
       h1 {
@@ -11,46 +12,79 @@
         text-align: center;
       }
 
-      p {
-        font-family: Times;
-        font-size: 20px;
-      }
       form {
-        margin-left: auto;
-        margin-right: auto;
-        width: 8em;
+        max-width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #354259;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #354259;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1e2a38;
+      }
+      .form-container {
+        display: flex;
+        justify-content: space-around;
       }
     </style>
   </head>
-  <h1>SignUp</h1>
-  <form autocomplete="on">
-    <!-- <form method="post" action="/users"> -->
-    <p>
-      <label for="username">Username:</label>
-      <input type="text" name="username" id="username" />
-    </p>
-    <p>
-      <label for="password">Password:</label>
-      <input type="text" name="password" id="password" />
-    </p>
-    <p>
-      <input type="submit" value="SignUp" id="signUpBtn" />
-    </p>
-  </form>
-  <h1>Login</h1>
-  <form autocomplete="on">
-    <!-- <form method="post" action="/users"> -->
-    <p>
-      <label for="username">Username:</label>
-      <input type="text" name="username" id="usernameSignin" />
-    </p>
-    <p>
-      <label for="password">Password:</label>
-      <input type="text" name="password" id="passwordSignin" />
-    </p>
-    <p>
-      <input type="submit" value="Login" id="signInBtn" />
-    </p>
-  </form>
+
+  <div class="form-container">
+    <form autocomplete="on">
+      <!-- <form method="post" action="/users"> -->
+      <h1>SignUp</h1>
+      <p>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required />
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="password" required />
+      </p>
+      <p>
+        <input type="submit" value="SignUp" id="signUpBtn" />
+      </p>
+    </form>
+
+    <form autocomplete="on">
+      <!-- <form method="post" action="/users"> -->
+      <h1>Login</h1>
+      <p>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="usernameSignin" required />
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="text" name="password" id="passwordSignin" required />
+      </p>
+      <p>
+        <input type="submit" value="Login" id="signInBtn" />
+      </p>
+    </form>
+  </div>
+
   <script src="login.js"></script>
 </html>

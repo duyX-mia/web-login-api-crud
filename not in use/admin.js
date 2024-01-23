@@ -59,7 +59,7 @@ async function getData() {
     return data
 }
 
-// -----------------WORKING WITH IMAGE-----------------
+// -----------------WORKING WITH IMAGE,Image Handling-----------------
 let imgUploadName = ""
 
 imageInput.addEventListener('change', (e) => {
@@ -130,7 +130,7 @@ function renderDomElement(tableItem) {
     })
 }
 
-// ---------------ADD DATA EVENT---------------
+// ---------------ADD DATA ELEMENT EVENT---------------
 saveBtn.addEventListener('click', async (e) => {
     e.preventDefault();
     await addElement();
@@ -226,7 +226,7 @@ function editElement(dataId) {
     });
 }
 
-// ---------------------DELETE DATA---------------------
+// ---------------------DELETE ELEMENT DATA---------------------
 function deleteData(dataId) {
     authorization();
     fetch(`http://localhost:8080/api/v1/products/${dataId}`, {

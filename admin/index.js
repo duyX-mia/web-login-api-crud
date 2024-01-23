@@ -17,4 +17,4 @@ setTimeout(() => {
         localStorage.removeItem("userInfo");
         window.location.href = "../login.html";
     })
-},500);
+},1000);
